@@ -2,8 +2,8 @@
 
 **Place:** Mohsin's charcoal and kangri stall near Dargah Hazratbal, Srinagar
 **Person:** Mohsin, charcoal and kangri seller
-**Date of fieldwork:** [TODO: REAL DATE + TIME WINDOW, e.g. 22 Nov 2026, 3:20–4:35 PM]
-**Screen recording:** [TODO: YouTube Unlisted / Drive link]
+**Date of fieldwork:** [22 Nov 2026, 3:20–4:35 PM]
+**Screen recording:** []
 
 ## The problem
 Last week Mohsin ran out of charcoal. He decides how much to bring each day from memory.
