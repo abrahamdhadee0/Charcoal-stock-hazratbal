@@ -2,7 +2,7 @@
 
 **Place:** Mohsin's charcoal and kangri stall near Dargah Hazratbal, Srinagar  
 **Person:** Mohsin, charcoal and kangri seller  
-**Date of fieldwork:** 22 November 2026, 3:20 PM – 4:35 PM  
+**Date of fieldwork:** 22 November 2026, 9:20 PM – 4:35 PM  
 **Screen recording:** Pending
 
 ## The Problem
