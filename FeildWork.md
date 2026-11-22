@@ -3,7 +3,7 @@
 **Place:** Mohsin's charcoal and kangri stall near Dargah Hazratbal, Srinagar, Jammu and Kashmir  
 **Person:** Mohsin, charcoal and kangri seller  
 **Date:** 22 November 2026  
-**Time at stall:** 3:20 PM – 4:35 PM (reported session time; confirm actual arrival and departure)  
+**Time at stall:** 9:20 PM – 6:35 PM (reported session time; confirm actual arrival and departure)  
 **Weather:** Not independently recorded.
 
 ## Photos
