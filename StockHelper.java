@@ -7,18 +7,10 @@ import java.time.format.DateTimeParseException;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Reads Mohsin's sales from data.csv and tells him:
- *  - how fast charcoal sold and when today's stock runs out
- *  - what people actually paid per kg
- *  - how much charcoal to bring tomorrow
- *
- * Run: java StockHelper.java data.csv
- */
 public class StockHelper {
 
     // ===================== SETTINGS (change these live) =====================
-    static double START_STOCK_KG = 0;          // charcoal he had when I started counting (from my notes)
+    static double START_STOCK_KG = 120;          // charcoal he had when I started counting (from my notes)
     static double SAFETY_BUFFER_PERCENT = 20;  // extra on top of today's demand for tomorrow
     static LocalTime CLOSING_TIME = LocalTime.of(20, 0); // when he usually packs up
     static double MAX_KG_PER_SALE = 50;        // bigger than this is probably a typo
