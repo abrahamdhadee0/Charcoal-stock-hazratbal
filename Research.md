@@ -59,7 +59,6 @@ Suggestion for tomorrow: bring about 49 kg charcoal
 | `StockHelper.java` | Main Java application |
 | `StockHelperTest.java` | Tests for CSV validation and calculations |
 | `data.csv` | Sales data |
-| `demo-data.csv` | Demonstration dataset |
 | `research.md` | Problem research |
 | `fieldwork.md` | Fieldwork observations and interview notes |
 
