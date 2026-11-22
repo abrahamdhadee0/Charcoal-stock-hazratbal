@@ -32,7 +32,7 @@ java StockHelperTest
 
 ## Results
 
-The following is the output from running the program with `demo-data.csv`:
+The following is the output from running the program with `data.csv`:
 
 ```text
 Read 25 good rows, skipped 0 bad rows.
