@@ -14,3 +14,8 @@ See `research.md`, `fieldwork.md` and `data.csv`.
 
 ## How to run
 Needs Java 17 or newer. No build tool needed.
+
+```bash
+javac StockHelper.java StockHelperTest.java
+java StockHelper data.csv
+java StockHelperTest
