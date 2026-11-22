@@ -87,8 +87,11 @@ public class StockHelper {
         } catch (NumberFormatException e) {
             throw new IllegalArgumentException("qty '" + p[2] + "' is not a number");
         }
-        if (qty <= 0 || qty > MAX_KG_PER_SALE) {
+                if (qty <= 0 || qty > MAX_KG_PER_SALE) {
             throw new IllegalArgumentException("qty " + qty + " is outside 0 to " + MAX_KG_PER_SALE);
+        }
+        if (item.equals("kangri") && qty % 1 != 0) {
+            throw new IllegalArgumentException("kangri qty must be a whole number, got " + qty);
         }
 
         String unit = p[3].trim().toLowerCase();
@@ -180,7 +183,7 @@ public class StockHelper {
             System.out.println("Selling speed: not enough time between first and last sale (need 30+ min).");
         }
 
-        // when does today's stock run out?
+               // when does today's stock run out?
         if (START_STOCK_KG > 0 && kgPerHour > 0) {
             double left = START_STOCK_KG - kgSold;
             if (left <= 0) {
@@ -189,10 +192,14 @@ public class StockHelper {
                 long minutesLeft = (long) (left / kgPerHour * 60);
                 LocalTime runOut = last.plusMinutes(minutesLeft);
                 System.out.printf("Stock left: %.1f kg, at this speed it lasts until about %s%n", left, runOut);
-                if (runOut.isBefore(CLOSING_TIME)) {
+                if (runOut.isBefore(last)) {
+                    System.out.println("  (that is past midnight at this speed)");
+                } else if (runOut.isBefore(CLOSING_TIME)) {
                     System.out.println("  WARNING: that is before closing time " + CLOSING_TIME);
                 }
             }
+        } else if (START_STOCK_KG == 0) {
+            System.out.println("(Set START_STOCK_KG at the top of the file to see when stock runs out.)");
         }
 
         // tomorrow = what people wanted today (sold + turned away) + buffer
