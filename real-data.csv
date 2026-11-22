@@ -1,0 +1,26 @@
+time,item,qty,unit,price_rs,customer,type,note
+09:12,charcoal,2,kg,85,regular,sale,morning purchase
+09:16,charcoal,1,kg,48,new,sale,first visit
+09:53,kangri,1,piece,280,new,sale,medium size
+10:07,charcoal,3,kg,130,regular,sale,negotiated rate
+10:08,charcoal,0.5,kg,28,new,sale,small quantity
+10:46,charcoal,2,kg,95,new,sale,normal purchase
+11:31,kangri,1,piece,320,regular,sale,large size
+11:34,charcoal,4,kg,175,regular,sale,bulk purchase
+11:36,charcoal,1.5,kg,72,new,sale,afternoon use
+12:19,charcoal,2,kg,90,regular,sale,repeat purchase
+12:21,charcoal,1,kg,52,new,sale,first purchase
+13:04,charcoal,3,kg,140,regular,sale,discount requested
+13:48,kangri,1,piece,290,new,sale,medium size
+14:02,charcoal,2.5,kg,118,regular,sale,negotiated price
+14:03,charcoal,1,kg,,new,turned_away,stock unavailable
+14:41,charcoal,0.75,kg,38,new,sale,small quantity
+14:43,charcoal,2,kg,92,regular,sale,usual purchase
+15:27,charcoal,5,kg,220,regular,sale,bulk order
+15:29,kangri,1,piece,350,new,sale,large size
+15:30,charcoal,1,kg,45,new,sale,discount requested
+16:11,charcoal,2,kg,88,regular,sale,repeat customer
+16:56,charcoal,3,kg,,new,turned_away,wanted three kg
+17:01,charcoal,1.5,kg,75,regular,sale,evening purchase
+17:38,kangri,1,piece,275,regular,sale,small size
+18:14,charcoal,2,kg,95,new,sale,evening purchase
