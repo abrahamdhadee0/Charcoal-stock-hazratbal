@@ -34,9 +34,7 @@ java StockHelperTest.java      # checks that bad rows are rejected
 All at the top of `StockHelper.java`:
 `START_STOCK_KG`, `SAFETY_BUFFER_PERCENT`, `CLOSING_TIME`, `MAX_KG_PER_SALE`, `MAX_PRICE_RS`.
 
-## Real output
-```
-```
+
 
 ## What it gets wrong
 - It uses one session of sales. One day can't show how demand changes with cold, power cuts, or Fridays at the Dargah.
