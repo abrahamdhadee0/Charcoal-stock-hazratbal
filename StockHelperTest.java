@@ -21,12 +21,13 @@ public class StockHelperTest {
         expectBad("TEST-BAD: kangri in kg", "17:00,kangri,1,kg,100,regular,sale,");
         expectBad("TEST-BAD: sale with no price", "17:00,charcoal,2,kg,,regular,sale,");
         expectBad("TEST-BAD: unknown type", "17:00,charcoal,2,kg,100,regular,gift,");
-
+        // TODO after fieldwork: uncomment and paste a REAL row from data.csv
+        // expectGood("REAL row from data.csv", "15:22,charcoal,2,kg,90,regular,sale,haggled");
         System.out.println(passed + " passed, " + failed + " failed");
         if (failed > 0) System.exit(1);
     }
 
-    static void expectBad(String name, String line) {
+       static void expectBad(String name, String line) {
         try {
             StockHelper.parseRow(line, 0);
             failed++;
@@ -34,6 +35,17 @@ public class StockHelperTest {
         } catch (IllegalArgumentException e) {
             passed++;
             System.out.println("ok   " + name + " -> " + e.getMessage());
+        }
+    }
+
+    static void expectGood(String name, String line) {
+        try {
+            StockHelper.parseRow(line, 0);
+            passed++;
+            System.out.println("ok   " + name + " (accepted)");
+        } catch (IllegalArgumentException e) {
+            failed++;
+            System.out.println("FAIL " + name + " -> " + e.getMessage());
         }
     }
 }
